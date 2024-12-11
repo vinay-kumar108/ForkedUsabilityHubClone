@@ -1,1 +1,15 @@
 /* this is media query file stylesheet.*/
+.container{
+    overflow:hidden;
+}    
+.nav-toogle{
+    display: none;
+}
+@media screen and (max-width:991px) {
+    .nav-toogle{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+}
