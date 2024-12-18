@@ -1,10 +1,14 @@
 /* this is media query file stylesheet.*/
 .container{
     overflow:hidden;
-}    
+} 
+.example-card{
+    height: 300px;
+}   
 .nav-toogle{
     display: none;
 }
+/* Tablet View CSS */
 @media screen and (max-width:991px) {
     .nav-toogle{
         display: block;
@@ -12,4 +16,41 @@
     .nav-links{
         display: none;
     }
+    .example-area{
+        flex-wrap: wrap;
+    }
+    .example-card{
+        width: calc(50% - 10px);
+        margin: 10px 0 ;
+        height: 180px;
+
+    }
+    .logos{
+        justify-content: space-evenly;
+    }
+}
+/* Mobile View CSS */
+@media screen and (max-width:767px) {
+    .header-section{
+        flex-direction: column-reverse;
+    }
+    .header-left{
+        width: 100%;
+        text-align: center;
+
+    }
+    .header-right img{
+        width: 100%;
+    }
+    .primary-button{
+        width: 100%;
+        text-align: center;
+    }
+    .big-feature-container{
+        flex-direction: column;
+    }
+    #spl-cont{
+        flex-direction: column-reverse;
+    }
+
 }
